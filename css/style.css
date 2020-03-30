@@ -1,0 +1,128 @@
+/* 
+Google Fonts:
+font-family: 'Libre Baskerville', serif;
+font-family: 'Didact Gothic', sans-serif;
+*/
+
+.content {
+    max-width: 60%;
+    margin: auto;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    text-align: left;
+    margin: 15px;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+.navbar li a {
+    display: inline;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.navbar li button {
+    text-align: right;
+}
+
+.navbar li a:hover {
+    background-color: burlywood;
+  }
+
+
+.navbar ul {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding-left: 50;   
+}
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #272343;
+}
+
+h2 {
+    font-family: 'Didact Gothic', sans-serif; 
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: large;
+}
+
+button {
+    background-color: #f3c623;
+    border-radius: 4px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.welcome {
+    border: 1em;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    margin-right: 0%;
+}
+
+.picture_landing_page img {
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+
+.about_finance {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.about_finance h2 {
+    margin-block-end: 0.2em;
+    float: left;
+}
+
+.about_finance p {
+    margin-block-start: 0.2em;
+    float: left; 
+}
+
+.benefits_container {
+    padding: 50px;
+    height: 200px;
+}
+
+.benefits {
+        float: left;
+        width: 30%;
+        height: auto;
+        margin-right: 3.33333%;
+        padding: 20px;
+        background: #f3c623;
+        box-sizing: border-box;
+        border-radius: 4px;
+}
+
+.benefits h2 {
+    margin-block-end: 0.2em;
+}
+
+.benefits p {    
+    margin-block-start: 0.2em;
+}
