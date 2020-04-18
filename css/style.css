@@ -1,3 +1,5 @@
+@import url("style_mq.css");
+
 /* 
 Google Fonts:
 font-family: 'Libre Baskerville', serif;
@@ -5,26 +7,33 @@ font-family: 'Didact Gothic', sans-serif;
 */
 
 .content {
-    width: 60%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
 
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;    
-    text-align: left;
-    margin: 15px;
+    text-align: center;
+    background-color: lightgray;
 }
 
-.navbar li {
-    display: inline;
-    margin-right: 20px;
-  }
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding-left: 50;   
+}
+
 
 .navbar li a {
-    display: inline;
+    display: flex;
+    align-items: flex-start;
     color: black;
     padding: 5px 5px;
     text-decoration: none;
@@ -39,12 +48,7 @@ font-family: 'Didact Gothic', sans-serif;
   }
 
 
-.navbar ul {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0;
-    padding-left: 50;   
-}
+
 
 h1 {
     font-family: 'Didact Gothic', sans-serif;
@@ -77,22 +81,28 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 100%;
-    height: 300px;
-    padding: 50px;
+    height: auto;
     margin-right: 0%;
+    /* justify-items: center; */
+    align-items: center;
+    grid-gap: 0px 5%;
 }
 
 .picture_landing_page img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
+    min-width: 350px;
+    justify-self: start;
 }
 
 .about_finance {
-    width: 50%;
-    height: 50%;
+    min-width: 150px;
+    max-width: 350px;
+    height: auto;
+    justify-self: end;
 }
 
-.about_finance h2 {
+/* .about_finance h2 {
     margin-block-end: 0.2em;
     float: left;
 }
@@ -100,10 +110,19 @@ li {
 .about_finance p {
     margin-block-start: 0.2em;
     float: left; 
+} */
+
+.section_benefits {
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
 }
 
 .benefits_container {
-    padding: 50px;
+    justify-content: center;
     height: auto;
     width: 100%;
     display: grid;
@@ -111,7 +130,7 @@ li {
     /* grid-template-rows: 1fr 1fr 1fr; */
     /* grid-template-areas:
     "benefits benefits benefits"; */
-    justify-items: start;
+    justify-items: center;
     grid-gap: 10px 10px;
 
 }
@@ -135,3 +154,39 @@ li {
 .benefits p {    
     margin-block-start: 0.2em;
 } */
+
+#header-benefits {
+    display: inline-block;
+    /* text-align: center; */
+}
+
+
+
+
+/* ------------------- media queries ---------------------- */
+
+@media (max-width: 800px){
+    .benefits_container {
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
+        /* grid-template-rows: 1fr 1fr 1fr; */
+        /* grid-template-areas:
+        "benefits benefits benefits"; */
+        justify-items: center;
+        grid-gap: 10px 10px;
+    }
+    
+    .benefits {
+        /* grid-area: benefits;  */
+        width: 90%;
+        height: auto;
+        min-width: 250px;
+        margin-right: 3.33333%;
+        padding: 20px;
+        background: #1d3da3;
+        box-sizing: border-box;
+        border-radius: 4px;
+}
