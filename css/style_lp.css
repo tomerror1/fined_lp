@@ -58,27 +58,19 @@ li {
 
 .navbar ul {
     display: flex;
-    /* justify-content: space-evenly; */
-    align-items: center;
     flex-wrap: nowrap;
     list-style-type: none;
-    width: 100%;
+    width: 90%;
     margin: 0;  
     padding-inline-start: 0px;
     justify-content: flex-end;
 }
 
 
-.navbar li a:hover {
-    background-color: burlywood;
-}
 
-.navbar ul.links {
-    justify-content: space-evenly;
-}
 
 .navbar ul.registration {
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .navbar ul.registration li button {
@@ -252,6 +244,12 @@ li {
 /* ------------------- max width 600px ---------------------- */
 
 @media (max-width: 600px){
+
+.navbar ul.registration {
+        justify-content: center;
+}
+
+
 
 .about_finance {
         justify-self: start;
