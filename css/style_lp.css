@@ -54,7 +54,6 @@ li {
     grid-template-columns: 1fr;
     top: 0;
     width: 100%;
-    background-color:;
 }
 
 .navbar ul {
@@ -183,7 +182,7 @@ li {
 
 /* ------------------- max width 799px ---------------------- */
 
-/* @media (max-width: 800px){ */
+@media (max-width: 970px){
 
 
 /* ----------------- section 1 -----------------  */
@@ -244,7 +243,7 @@ li {
     border-radius: 4px;
 }
 
-
+}
 
 /* ------------------- max width 600px ---------------------- */
 
