@@ -51,10 +51,9 @@ li {
 .navbar {
     /* position: fixed; */
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     top: 0;
     width: 100%;    
-    background-color: lightgray;
 }
 
 .navbar ul {
@@ -65,7 +64,8 @@ li {
     list-style-type: none;
     width: 100%;
     margin: 0;  
-    padding-inline-start: 0px; 
+    padding-inline-start: 0px;
+    justify-content: flex-end;
 }
 
 
@@ -85,6 +85,13 @@ li {
     margin-left: 10px;
 }
 
+/* ----------------- section 1 -----------------  */
+
+.picture_landing_page img {
+    width: 350px;
+    height: 350px;
+}
+
 /* ------------------ section 2 -------------- */
 
 .section_benefits {
@@ -100,9 +107,10 @@ li {
     min-width: 150px;
     max-width: 500px;
 }
-}
+} 
 
-@media (min-width: 800px){
+
+@media (min-width: 970px){
 /* ----------------- section 1 -----------------  */
 
 
@@ -122,8 +130,6 @@ li {
 }
 
 .picture_landing_page img {
-    width: 60%;
-    height: 60%;
     min-width: 350px;
     justify-self: start;
 }
@@ -180,7 +186,7 @@ li {
 
 /* ------------------- max width 799px ---------------------- */
 
-@media (max-width: 799px){
+@media (max-width: 800px){
 
 
 /* ----------------- section 1 -----------------  */
@@ -192,7 +198,7 @@ li {
     height: auto;
     margin-right: 0%;
     /* justify-items: center; */
-    grid-gap: 5px;
+    grid-gap: 0px;
 }
 
 .about_finance {
@@ -212,11 +218,6 @@ li {
     justify-content: center;    
 }
 
-.picture_landing_page img {
-    width: 60%;
-    height: 60%;
-    min-width: 350px;
-}
 
 /* ------------------ section 2 -------------- */
 
@@ -248,9 +249,20 @@ li {
 
 }
 
+/* ------------------- max width 600px ---------------------- */
+
+@media (max-width: 600px){
+
+.about_finance {
+        justify-self: start;
+}
+
+
+}
+
 /* ------------------- max width 380px ---------------------- */
 
-@media (max-width: 380px){
+@media (max-width: 460px){
 
 /* ------------------ headings & fonts ------------------- */
 
