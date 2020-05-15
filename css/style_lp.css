@@ -36,7 +36,7 @@ button {
     background-color: #f3c623;
     border-radius: 4px;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
 }
@@ -53,7 +53,8 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     top: 0;
-    width: 100%;    
+    width: 100%;
+    background-color:;
 }
 
 .navbar ul {
