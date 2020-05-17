@@ -6,7 +6,7 @@
 Use HTTP to access this Website.
 
 ### Connected project
-This repository is used, to develop separately the landing page of the project FinEd - Financial Eduation
+This repository is used, to separately develop the landing page of the project FinEd - Financial Eduation
 Repository: https://github.com/tomerror1/fined_be
 
 ### About the Product
