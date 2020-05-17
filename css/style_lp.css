@@ -78,6 +78,10 @@ li {
 
 /* ----------------- section 1 - hero -----------------  */
 
+.about_finance {
+    max-width: 500px;
+}
+
 .no-break {
     white-space: nowrap;
 }
@@ -100,14 +104,6 @@ li {
 
 
 /* MEDIA QUERIES */
-/* ------------------ min-width 1050px ----------------- */
-/* ----------------- section 1 - hero -----------------  */
-@media (min-width: 1050px){
-.about_finance {
-    max-width: 500px;
-}
-
-} 
 
 /* ------------------ min-width 970px ----------------- */
 @media (min-width: 970px){
