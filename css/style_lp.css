@@ -6,15 +6,6 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Didact Gothic', sans-serif;
 */
 
-
-/*------------------- whole page  ----------------*/
-.content {
-    width: 100%;
-    margin: 0 auto;
-    min-width: 359px;
-
-}
-
 /* ------------------ headings & fonts ------------------- */
 
 h1 {
@@ -45,6 +36,14 @@ li {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+/* GENERAL RULES */
+/*------------------- whole page  ----------------*/
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 359px;
+}
 
 /* -------------------- navigation bar ---------------- */
 
@@ -77,8 +76,7 @@ li {
     margin-left: 10px;
 }
 
-/* ----------------- section 1 -----------------  */
-
+/* ----------------- section 1 - hero -----------------  */
 
 
 .picture_landing_page img {
@@ -88,24 +86,27 @@ li {
 
 
 
-/* ------------------ section 2 -------------- */
+/* ------------------ section 2 - benefits -------------- */
 
 .section_benefits {
     width: 100%;
     background-color: lightgray;
     padding-top: 15px;
     padding-bottom: 30px;
-
 }
 
+
+/* MEDIA QUERIES */
+/* ------------------ min-width 1050px ----------------- */
+/* ----------------- section 1 - hero -----------------  */
 @media (min-width: 1050px){
 .about_finance {
-    min-width: 150px;
     max-width: 500px;
 }
+
 } 
 
-
+/* ------------------ min-width 970px ----------------- */
 @media (min-width: 970px){
 /* ----------------- section 1 -----------------  */
 
