@@ -1,11 +1,12 @@
 
-/* ------------- imported fonts -----------------  */
+/* IMPORTS */
+/* ------------------- imported fonts -------------------  */
 /* 
 Google Fonts:
 font-family: 'Libre Baskerville', serif;
 font-family: 'Didact Gothic', sans-serif;
 */
-
+/* GENERAL RULES */
 /* ------------------ headings & fonts ------------------- */
 
 h1 {
@@ -36,7 +37,6 @@ li {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-/* GENERAL RULES */
 /*------------------- whole page  ----------------*/
 
 .content {
@@ -104,11 +104,11 @@ li {
 
 
 /* MEDIA QUERIES */
-
 /* ------------------ min-width 970px ----------------- */
-@media (min-width: 970px){
-/* ----------------- section 1 -----------------  */
 
+@media (min-width: 970px){
+
+/* ----------------- section 1 - hero -----------------  */
 
 .welcome {
     display: grid;
@@ -116,15 +116,8 @@ li {
     width: 100%;
     height: auto;
     margin-right: 0%;
-    /* justify-items: center; */
     align-items: center;
     grid-gap: 0px 5%;
-}
-
-
-.picture_landing_page img {
-    min-width: 350px;
-    justify-self: start;
 }
 
 .about_finance {
@@ -133,30 +126,31 @@ li {
     justify-self: end;
 }
 
+.picture_landing_page img {
+    min-width: 350px;
+    justify-self: start;
+}
 
-
-/* ------------------ section 2 -------------- */
+/* ------------------ section 2 - benefits -------------- */
 
 .section_benefits {
     text-align: center;
 }
 
+/* create grid with columns */
 .benefits_container {
     justify-content: center;
     height: auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-    /* grid-template-rows: 1fr 1fr 1fr; */
-    /* grid-template-areas:
-    "benefits benefits benefits"; */
     justify-items: center;
     grid-gap: 10px 10px;
 
 }
 
+
 .benefits {
-        /* grid-area: benefits;  */
         width: 250px;
         height: 300px;
         min-width: 250px;
@@ -165,13 +159,6 @@ li {
         background: #f3c623;
         box-sizing: border-box;
         border-radius: 4px;
-}
-
-
-
-#header-benefits {
-    display: inline-block;
-    /* text-align: center; */
 }
 
 }
@@ -183,13 +170,13 @@ li {
 
 /* ----------------- section 1 - hero -----------------  */
 
+/* change grid from columns to rows */
 .welcome {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr));
     width: 100%;
     height: auto;
     margin-right: 0%;
-    /* justify-items: center; */
     grid-gap: 0px;
 }
 
@@ -200,18 +187,15 @@ li {
     justify-self: center;
 }
 
-
-
-
 .picture_landing_page {
     display: flex;
     justify-content: center;    
 }
 
 
-/* ------------------ section 2 -------------- */
+/* ------------------ section 2 - benefits -------------- */
 
-
+/* change grid from columns to rows */
 .benefits_container {
     justify-content: center;
     height: auto;
@@ -220,6 +204,10 @@ li {
     grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
     justify-items: center;
     grid-gap: 10px 10px;
+}
+
+#header_benefits {
+    margin-left: 10px;
 }
 
 .benefits {
